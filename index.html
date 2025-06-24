@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tute Code</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Tute Code</div>
+
+        <!-- Hamburger icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigation with menu items + Login & Sign‑Up -->
+        <nav class="menu" id="menu">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Admission</a>
+            <a href="#" class="btn side">Login</a>
+            <a href="#" class="btn side">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="teacher-section">
+        <h2>Our Teacher</h2>
+        <div class="teacher-cards">
+            <div class="teacher-card">
+                <img src="/images/miss1.jpg" alt="Teacher" />
+            </div>
+            <div class="teacher-card">
+                <img src="/images/miss2.png" alt="Teacher 2" />
+            </div>
+            <div class="teacher-card">
+                <img src="/images/miss3.jpg" alt="Teacher 3" />
+            </div>
+
+        </div>
+    </section>
+    <!-- <hr style="color: blue;"> -->
+
+
+    <section class="course-section">
+        <h2>Our Courses</h2>
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="/images/c1.jpeg" alt="Teacher" />
+            </div>
+            <div class="teacher-card">
+                <img src="/images/c2.jpeg" alt="Teacher 2" />
+            </div>
+            <div class="teacher-card">
+                <img src="/images/c3.jpeg" alt="Teacher 3" />
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-left">
+                <h2>Never Miss a Thing</h2>
+            </div>
+            <div class="newsletter-right">
+                <p>Keep updated with all our latest news</p>
+                <form class="newsletter-form">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" />
+
+                    <div class="checkbox-wrap">
+                        <input type="checkbox" id="subscribe" />
+                        <label for="subscribe">Yes, subscribe me to your newsletter.</label>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Twitter">X</a>
+                <a href="#" aria-label="LinkedIn">IN</a>
+            </div>
+            <p>© 2025 by Tute Code.</p>
+        </div>
+
+        <div class="chat-icon">
+            <a href="#" title="Chat with us">💬</a>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
